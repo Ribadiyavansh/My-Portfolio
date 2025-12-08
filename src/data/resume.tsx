@@ -78,8 +78,8 @@ export const DATA = {
       location: "Remote",
       title: "Full Stack Developer",
       logoUrl: "https://digisoftwar.com/uploads/logo/logo_618bb20d2898c.png",
-      start: "2023",
-      end: "Present",
+      start: "2024",
+      end: "Freelancing",
       description:
         "Delivered 2+ full-stack applications, dynamic dashboards with role-based UI, API-driven insights, and complex MERN systems. Improved API and database performance across high-traffic modules for logistics and e-commerce platforms.",
     },
@@ -90,8 +90,8 @@ export const DATA = {
       location: "Remote",
       title: "Shopify & Web Developer",
       logoUrl: "https://yt3.googleusercontent.com/4iqg_1ecnVxbB28F3GMqFJcJ-DxoYl2IfCvvfcch6h5bGMUP1TYlEvaKrzx1IYBRmIBC2f89=s160-c-k-c0x00ffffff-no-rj",
-      start: "2023",
-      end: "Present",
+      start: "2024",
+      end: "Freelancing",
       description:
         "Developed premium jewelry e-commerce store with custom Liquid components, Advanced filtering, and SEO optimization. Implemented Shopify APIs for payment gateways and shipping integrations.",
     },
@@ -102,8 +102,8 @@ export const DATA = {
       location: "Remote",
       title: "React.js Developer",
       logoUrl: "https://rutanshtech.com/static/media/logo.cc4d56e0c3c62cd0f972.png",
-      start: "2023",
-      end: "Present",
+      start: "2024",
+      end: "Freelancing",
       description:
         "Delivered multiple React.js dashboards with advanced reporting, role-based UI management, and API-driven data visualization. Built scalable front-end applications with state management and performance optimization.",
     },
