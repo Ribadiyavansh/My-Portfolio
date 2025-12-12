@@ -20,6 +20,16 @@ export async function GET() {
     // 2) Build system prompt
     const prompt = `
 You are an expert technical writer.
+dont add this in json text in json 
+direct genrat json response like below 
+{
+  "title": "Unique technical title",
+  "summary": "Short summary under 100 characters",
+  "topic": "Topic name",
+  "imageUrl": "https://valid-image-url.com",
+  "content": "# Markdown content here..."
+}
+not any single text have out of this response
 
 Generate a **brand new and unique** blog post.
 IMPORTANT RULES:
@@ -59,12 +69,13 @@ JSON FORMAT EXACTLY:
     const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
     if (!rawText) throw new Error("Invalid Gemini response");
 
-    console.log("Raw Gemini Response:", rawText);
-
+    
     // 4) Parse JSON safely
     let result;
+    let rt = rawText.replaceAll('`', '').replaceAll('json', '');
+    console.log("Raw Gemini Response:", rt);
     try {
-      result = JSON.parse(rawText);
+      result = JSON.parse(rt);
     } catch {
       const extracted = rawText.match(/\{[\s\S]*\}/);
       if (!extracted) throw new Error("Could not extract JSON");
