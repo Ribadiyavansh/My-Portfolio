@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Icons } from "./icons";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -11,7 +12,14 @@ export function Hero() {
       <div className="mx-auto w-full max-w-5xl space-y-8 mt-20">
         <div className="relative inline-block">
           <Avatar className="size-24 rounded-full">
-            <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+            <Image
+              alt={DATA.name}
+              src={DATA.avatarUrl}
+              width={96}
+              height={96}
+              priority
+              className="aspect-square h-full w-full object-cover"
+            />
             <AvatarFallback>{DATA.initials}</AvatarFallback>
           </Avatar>
         </div>

@@ -69,6 +69,8 @@ export function ProjectCard({
               loop
               muted
               playsInline
+              preload="metadata"
+              poster={image}
               onCanPlay={() => setIsLoading(false)}
               className={cn(
                 "pointer-events-none mx-auto h-40 w-full object-cover object-top transition-opacity duration-300",
