@@ -11,7 +11,7 @@ export const DATA = {
     "Full Stack Developer specializing in scalable SaaS solutions, MERN stack applications, and custom e-commerce platforms using React.js, Laravel, and Node.js.",
   summary:
     "Full-stack developer with strong expertise in React.js, Next.js, Laravel, and Node.js. Experienced in developing scalable MERN applications, dynamic dashboards, automation tools, and e-commerce platforms. Skilled in API integrations, Shopify store development, performance optimization, and Agile development workflows.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.webp",
   skills: [
     "React.js",
     "Next.js",
