@@ -1,6 +1,6 @@
 # Sahil Portfolio
 
-A modern, responsive portfolio website built with React, Vite, and TypeScript. This project showcases my work as a Frontend Developer & UI/UX Designer, featuring an interactive design with dark/light mode support.
+A modern, responsive portfolio website built with React, Vite, and TypeScript. This project showcases my work as a Cloud & DevOps Engineer, featuring an interactive design with dark/light mode support and smooth animations.
 
 ## 🚀 Tech Stack
 
@@ -22,9 +22,9 @@ A modern, responsive portfolio website built with React, Vite, and TypeScript. T
 - 📱 Mobile-first approach
 - 🚀 Fast loading with Vite
 - 📧 Contact integration
-- 💼 Project showcase with video demos
-- 📝 Blog functionality (static content)
-- 🎯 SEO optimized
+- 💼 Project showcase with interactive cards
+- 📋 Work experience and education timeline
+- 🎯 Clean, professional design
 
 ## 🛠️ Installation & Setup
 
@@ -69,13 +69,10 @@ sahil-portfolio/
 │   ├── app/
 │   │   ├── layout.tsx          # Main layout component
 │   │   ├── page.tsx           # Home page
-│   │   ├── blog/
-│   │   │   ├── page.tsx       # Blog listing page
-│   │   │   └── [slug]/
-│   │   │       └── page.tsx   # Individual blog post
 │   │   └── globals.css        # Global styles
 │   ├── components/
 │   │   ├── ui/                # Reusable UI components
+│   │   ├── magicui/           # Animation components
 │   │   ├── hero.tsx           # Hero section
 │   │   ├── navbar.tsx         # Navigation component
 │   │   ├── project-card.tsx   # Project showcase cards
@@ -84,14 +81,13 @@ sahil-portfolio/
 │   │   ├── theme-provider.tsx # Theme context provider
 │   │   └── icons.tsx          # Icon components
 │   ├── data/
-│   │   ├── resume.tsx         # Resume data
-│   │   └── blog.ts           # Blog data (static)
+│   │   └── resume.tsx         # Resume and project data
 │   ├── hooks/                 # Custom React hooks
 │   ├── lib/
 │   │   └── utils.ts          # Utility functions
 │   ├── App.tsx               # Main App component with routing
 │   └── main.tsx              # App entry point
-├── public/                    # Static assets
+├── public/                    # Static assets (images, CV, etc.)
 ├── index.html                # HTML template
 ├── vite.config.ts           # Vite configuration
 ├── tailwind.config.ts       # Tailwind CSS configuration
@@ -117,9 +113,7 @@ Edit the `src/data/resume.tsx` file to add new projects to the portfolio.
 
 The theme system uses CSS custom properties. Modify the global styles in `src/app/globals.css` to customize colors and design tokens.
 
-### Adding Blog Posts
 
-Currently uses static blog content. Add new blog posts by updating the blog data in the components.
 
 ## 🚀 Deployment
 
@@ -171,10 +165,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Sahil V. Muliya**
-- Frontend Developer & UI/UX Designer
+- Cloud & DevOps Engineer
 - Portfolio: [sahil-portfolio.vercel.app](https://sahil-portfolio.vercel.app)
-- LinkedIn: [linkedin.com/in/sahil-muliya](https://linkedin.com/in/sahil-muliya)
-- GitHub: [github.com/sahil-muliya](https://github.com/sahil-muliya)
+- LinkedIn: [linkedin.com/in/sahil-v-muliya-92593027b/](https://www.linkedin.com/in/sahil-v-muliya-92593027b/)
+- GitHub: [github.com/Sahil-Prajapati-8917](https://github.com/Sahil-Prajapati-8917)
+- Email: sahilprajapati8917@gmail.com
 
 ---
 
