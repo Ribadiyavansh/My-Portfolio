@@ -125,7 +125,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="quote">
+      {/* <section id="quote">
         <BlurFade delay={BLUR_FADE_DELAY * 13}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center py-12">
             <div className="bg-white dark:bg-transparent border-l border-r border-b border-gray-200 dark:border-transparent shadow-xl dark:shadow-none rounded-3xl p-8 max-w-2xl mx-auto">
@@ -143,7 +143,7 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
-      </section>
+      </section> */}
 
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
