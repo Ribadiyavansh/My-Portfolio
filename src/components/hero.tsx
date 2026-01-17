@@ -127,7 +127,7 @@ export function Hero() {
         </div>
         <div className="mt-8 flex gap-4">
           <Button asChild>
-            <a href="/Sahil%20V.%20Muliya%20-%20CV.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Sahil V. Muliya - Resume.pdf" target="_blank" rel="noopener noreferrer">
               <svg
                 className="mr-2 h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
