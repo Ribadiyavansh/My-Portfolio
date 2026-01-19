@@ -46,231 +46,83 @@ export function Hero() {
               </span>
             </div>
           </div>
-          <div className="mt-4 space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300 mb-2">Cloud & DevOps</h3>
-              <div className="flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base md:text-lg text-neutral-500 whitespace-pre-wrap">
-                <span>I work with modern tools like</span>
+          <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base md:text-lg text-neutral-500 whitespace-pre-wrap">
+  <span>I work with modern Cloud and DevOps tools like</span>
 
-                {/* AWS */}
-                <a
-                  target="_blank"
-                  href="https://aws.amazon.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.aws />
-                  <span className="font-bold">AWS</span>
-                </a>
+  {/* AWS */}
+  <a
+    target="_blank"
+    href="https://aws.amazon.com/"
+    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" className="h-4 w-4" />
+    <span className="font-bold">AWS</span>
+  </a>
 
-                <span>, </span>
+  <span>, </span>
 
-                {/* Linux */}
-                <a
-                  target="_blank"
-                  href="https://www.linux.org/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.linux />
-                  <span className="font-bold">Linux</span>
-                </a>
+  {/* Linux */}
+  <a
+    target="_blank"
+    href="https://www.linux.org/"
+    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" className="h-4 w-4" />
+    <span className="font-bold">Linux</span>
+  </a>
 
-                <span>, </span>
+  <span>, </span>
 
-                {/* Docker */}
-                <a
-                  target="_blank"
-                  href="https://www.docker.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.docker />
-                  <span className="font-bold">Docker</span>
-                </a>
+  {/* Docker */}
+  <a
+    target="_blank"
+    href="https://www.docker.com/"
+    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+  >
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="h-4 w-4" />
+    <span className="font-bold">Docker</span>
+  </a>
 
-                <span>, </span>
+  <span>, </span>
 
-                {/* Git */}
-                <a
-                  target="_blank"
-                  href="https://git-scm.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.git />
-                  <span className="font-bold">Git</span>
-                </a>
+  {/* Git */}
+  <a
+    target="_blank"
+    href="https://git-scm.com/"
+    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+  >
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="h-4 w-4" />
+    <span className="font-bold">Git</span>
+  </a>
 
-                <span>, </span>
+  <span>, </span>
 
-                {/* CI/CD */}
-                <a
-                  target="_blank"
-                  href="https://docs.github.com/en/actions"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.cicd />
-                  <span className="font-bold">CI/CD Pipelines</span>
-                </a>
+  {/* CI/CD */}
+  <a
+    target="_blank"
+    href="https://docs.github.com/en/actions"
+    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+  >
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="CI/CD" className="h-4 w-4 dark:invert" />
+    <span className="font-bold">CI/CD Pipelines</span>
+  </a>
 
-                <span>, </span>
+  <span>and </span>
 
-                {/* Nginx */}
-                <a
-                  target="_blank"
-                  href="https://www.nginx.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.nginx />
-                  <span className="font-bold">Nginx</span>
-                </a>
+  {/* Nginx */}
+  <a
+    target="_blank"
+    href="https://www.nginx.com/"
+    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+  >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg" alt="Nginx" className="h-4 w-4" />
+    <span className="font-bold">Nginx</span>
+  </a>
 
-                <span>, </span>
-
-                {/* Prometheus */}
-                <a
-                  target="_blank"
-                  href="https://prometheus.io/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.prometheus />
-                  <span className="font-bold">Prometheus</span>
-                </a>
-
-                <span>and </span>
-
-                {/* Grafana */}
-                <a
-                  target="_blank"
-                  href="https://grafana.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.grafana />
-                  <span className="font-bold">Grafana</span>
-                </a>
-
-                <span>to build secure, scalable infrastructure.</span>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300 mb-2">Backend & APIs</h3>
-              <div className="flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base md:text-lg text-neutral-500 whitespace-pre-wrap">
-                <span>I build robust backends using</span>
-
-                {/* Node.js */}
-                <a
-                  target="_blank"
-                  href="https://nodejs.org/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.nodejs />
-                  <span className="font-bold">Node.js</span>
-                </a>
-
-                <span>, </span>
-
-                {/* Express.js */}
-                <a
-                  target="_blank"
-                  href="https://expressjs.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.express />
-                  <span className="font-bold">Express.js</span>
-                </a>
-
-                <span>, </span>
-
-                {/* MongoDB */}
-                <a
-                  target="_blank"
-                  href="https://www.mongodb.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.mongodb />
-                  <span className="font-bold">MongoDB</span>
-                </a>
-
-                <span>, </span>
-
-                {/* Firebase */}
-                <a
-                  target="_blank"
-                  href="https://firebase.google.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.firebase />
-                  <span className="font-bold">Firebase</span>
-                </a>
-
-                <span>and </span>
-
-                {/* REST API Design */}
-                <a
-                  target="_blank"
-                  href="https://restfulapi.net/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <span className="font-bold">REST API Design</span>
-                </a>
-
-                <span>for efficient API development.</span>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300 mb-2">Frontend & Scripting</h3>
-              <div className="flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base md:text-lg text-neutral-500 whitespace-pre-wrap">
-                <span>I create dynamic interfaces with</span>
-
-                {/* JavaScript */}
-                <a
-                  target="_blank"
-                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.javascript />
-                  <span className="font-bold">JavaScript</span>
-                </a>
-
-                <span>, </span>
-
-                {/* React.js */}
-                <a
-                  target="_blank"
-                  href="https://reactjs.org/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.react />
-                  <span className="font-bold">React.js</span>
-                </a>
-
-                <span>, </span>
-
-                {/* Tailwind CSS */}
-                <a
-                  target="_blank"
-                  href="https://tailwindcss.com/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.tailwindcss />
-                  <span className="font-bold">Tailwind CSS</span>
-                </a>
-
-                <span>and </span>
-
-                {/* Python */}
-                <a
-                  target="_blank"
-                  href="https://www.python.org/"
-                  className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-                >
-                  <Icons.python />
-                  <span className="font-bold">Python</span>
-                </a>
-
-                <span>.</span>
-              </div>
-            </div>
-          </div>
+  <span>
+    {""}I focus on building secure, scalable, production-ready infrastructure.
+  </span>
+</div>
 
         </div>
         <div className="mt-8 flex gap-4">
