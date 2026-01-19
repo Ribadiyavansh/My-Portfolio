@@ -102,4 +102,68 @@ export const Icons = {
     />
   ),
   instagram: Instagram,
+  prometheus: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"
+      className="size-3"
+      alt="Prometheus"
+      {...props}
+    />
+  ),
+  grafana: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
+      className="size-3"
+      alt="Grafana"
+      {...props}
+    />
+  ),
+  nodejs: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      className="size-3"
+      alt="Node.js"
+      {...props}
+    />
+  ),
+  express: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+      className="size-3"
+      alt="Express.js"
+      {...props}
+    />
+  ),
+  firebase: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+      className="size-3"
+      alt="Firebase"
+      {...props}
+    />
+  ),
+  javascript: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      className="size-3"
+      alt="JavaScript"
+      {...props}
+    />
+  ),
+  python: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      className="size-3"
+      alt="Python"
+      {...props}
+    />
+  ),
+  tailwindcss: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+      className="size-3"
+      alt="Tailwind CSS"
+      {...props}
+    />
+  ),
 };

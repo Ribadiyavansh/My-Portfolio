@@ -46,83 +46,166 @@ export function Hero() {
               </span>
             </div>
           </div>
-          <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base md:text-lg text-neutral-500 whitespace-pre-wrap">
-  <span>I work with modern Cloud and DevOps tools like</span>
+          <div className="mt-4 text-base md:text-lg text-neutral-500">
+            <span>I focus on building secure, scalable, production-ready infrastructure.</span>
+          </div>
 
-  {/* AWS */}
-  <a
-    target="_blank"
-    href="https://aws.amazon.com/"
-    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" className="h-4 w-4" />
-    <span className="font-bold">AWS</span>
-  </a>
-
-  <span>, </span>
-
-  {/* Linux */}
-  <a
-    target="_blank"
-    href="https://www.linux.org/"
-    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" className="h-4 w-4" />
-    <span className="font-bold">Linux</span>
-  </a>
-
-  <span>, </span>
-
-  {/* Docker */}
-  <a
-    target="_blank"
-    href="https://www.docker.com/"
-    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-  >
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="h-4 w-4" />
-    <span className="font-bold">Docker</span>
-  </a>
-
-  <span>, </span>
-
-  {/* Git */}
-  <a
-    target="_blank"
-    href="https://git-scm.com/"
-    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-  >
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="h-4 w-4" />
-    <span className="font-bold">Git</span>
-  </a>
-
-  <span>, </span>
-
-  {/* CI/CD */}
-  <a
-    target="_blank"
-    href="https://docs.github.com/en/actions"
-    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-  >
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="CI/CD" className="h-4 w-4 dark:invert" />
-    <span className="font-bold">CI/CD Pipelines</span>
-  </a>
-
-  <span>and </span>
-
-  {/* Nginx */}
-  <a
-    target="_blank"
-    href="https://www.nginx.com/"
-    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
-  >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg" alt="Nginx" className="h-4 w-4" />
-    <span className="font-bold">Nginx</span>
-  </a>
-
-  <span>
-    {""}I focus on building secure, scalable, production-ready infrastructure.
-  </span>
-</div>
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold mb-4">Skills</h3>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-md font-medium mb-2">Cloud & DevOps</h4>
+                <div className="flex flex-wrap gap-2">
+                  <a
+                    target="_blank"
+                    href="https://aws.amazon.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" className="h-4 w-4" />
+                    <span className="font-bold">AWS</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linux.org/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" className="h-4 w-4" />
+                    <span className="font-bold">Linux</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.docker.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="h-4 w-4" />
+                    <span className="font-bold">Docker</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://git-scm.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="h-4 w-4" />
+                    <span className="font-bold">Git</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://docs.github.com/en/actions"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="CI/CD" className="h-4 w-4 dark:invert" />
+                    <span className="font-bold">CI/CD Pipelines</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.nginx.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg" alt="Nginx" className="h-4 w-4" />
+                    <span className="font-bold">Nginx</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://prometheus.io/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" className="h-4 w-4" />
+                    <span className="font-bold">Prometheus</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://grafana.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" className="h-4 w-4" />
+                    <span className="font-bold">Grafana</span>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-md font-medium mb-2">Backend & APIs</h4>
+                <div className="flex flex-wrap gap-2">
+                  <a
+                    target="_blank"
+                    href="https://nodejs.org/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="h-4 w-4" />
+                    <span className="font-bold">Node.js</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://expressjs.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="h-4 w-4" />
+                    <span className="font-bold">Express.js</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.mongodb.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="h-4 w-4" />
+                    <span className="font-bold">MongoDB</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://firebase.google.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="h-4 w-4" />
+                    <span className="font-bold">Firebase</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://restfulapi.net/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <Icons.globe className="h-4 w-4" />
+                    <span className="font-bold">REST API Design</span>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-md font-medium mb-2">Frontend & Scripting</h4>
+                <div className="flex flex-wrap gap-2">
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="h-4 w-4" />
+                    <span className="font-bold">JavaScript</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://reactjs.org/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" className="h-4 w-4" />
+                    <span className="font-bold">React.js</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://tailwindcss.com/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" className="h-4 w-4" />
+                    <span className="font-bold">Tailwind CSS</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.python.org/"
+                    className="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+                  >
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="h-4 w-4" />
+                    <span className="font-bold">Python</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
         <div className="mt-8 flex gap-4">
