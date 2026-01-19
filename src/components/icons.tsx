@@ -8,7 +8,7 @@ export const Icons = {
   typescript: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-      className="size-3"
+      className="h-4 w-4"
       alt="TypeScript"
       {...props}
     />
@@ -16,7 +16,7 @@ export const Icons = {
   react: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-      className="size-3"
+      className="h-4 w-4"
       alt="React"
       {...props}
     />
@@ -98,6 +98,70 @@ export const Icons = {
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
       className="size-3"
       alt="Cloud Storage"
+      {...props}
+    />
+  ),
+  prometheus: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"
+      className="size-3"
+      alt="Prometheus"
+      {...props}
+    />
+  ),
+  grafana: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
+      className="size-3"
+      alt="Grafana"
+      {...props}
+    />
+  ),
+  nodejs: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      className="size-3"
+      alt="Node.js"
+      {...props}
+    />
+  ),
+  express: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+      className="size-3"
+      alt="Express.js"
+      {...props}
+    />
+  ),
+  firebase: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+      className="size-3"
+      alt="Firebase"
+      {...props}
+    />
+  ),
+  javascript: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      className="size-3"
+      alt="JavaScript"
+      {...props}
+    />
+  ),
+  tailwindcss: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+      className="size-3"
+      alt="Tailwind CSS"
+      {...props}
+    />
+  ),
+  python: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      className="size-3"
+      alt="Python"
       {...props}
     />
   ),
