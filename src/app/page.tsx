@@ -9,90 +9,38 @@ import { useTheme } from "@/components/theme-provider";
 
 const BLUR_FADE_DELAY = 0.04;
 
-const getSkillIcon = (skill: string, isDarkTheme: boolean) => {
+
+const getSkillIcon = (skill: string) => {
   const skillLower = skill.toLowerCase();
 
-  if (skillLower.includes('aws') || skillLower.includes('ec2') || skillLower.includes('s3') || skillLower.includes('iam') || skillLower.includes('cloudwatch')) {
-    return (
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-        className="w-3 h-3"
-        alt="AWS"
-      />
-    );
-  }
+  if (skillLower.includes("aws") || skillLower.includes("ec2") || skillLower.includes("s3") || skillLower.includes("iam") || skillLower.includes("cloudwatch")) return <Icons.aws className="size-8" />;
+  if (skillLower.includes("linux")) return <Icons.linux className="size-8" />;
+  if (skillLower.includes("bash")) return <Icons.bash className="size-8" />;
+  if (skillLower.includes("docker") || skillLower.includes("containerization")) return <Icons.docker className="size-8" />;
+  if (skillLower.includes("github")) return <Icons.githubBrand className="size-8" />; // Prioritize GitHub
+  if (skillLower.includes("git")) return <Icons.git className="size-8" />;
+  if (skillLower.includes("nginx")) return <Icons.nginx className="size-8" />;
+  if (skillLower.includes("ci/cd") || skillLower.includes("pipelines")) return <Icons.cicd className="size-8" />;
+  if (skillLower.includes("prometheus")) return <Icons.prometheus className="size-8" />;
+  if (skillLower.includes("grafana")) return <Icons.grafana className="size-8" />;
+  if (skillLower.includes("monitoring") || skillLower.includes("logging")) return <Icons.activity className="size-8 text-red-500" />;
+  if (skillLower.includes("security")) return <Icons.shield className="size-8 text-blue-500" />;
+  if (skillLower.includes("node")) return <Icons.nodejs className="size-8" />;
+  if (skillLower.includes("express")) return <Icons.express className="size-8" />;
+  if (skillLower.includes("mongodb") || skillLower.includes("mongo")) return <Icons.mongodb className="size-8" />;
+  if (skillLower.includes("firebase")) return <Icons.firebase className="size-8" />;
+  if (skillLower.includes("javascript") || skillLower.includes("js")) return <Icons.javascript className="size-8" />;
+  if (skillLower.includes("react")) return <Icons.react className="size-8" />;
+  if (skillLower.includes("tailwind")) return <Icons.tailwind className="size-8" />;
+  if (skillLower.includes("python")) return <Icons.python className="size-8" />;
+  if (skillLower.includes("typescript") || skillLower.includes("ts")) return <Icons.typescript className="size-8" />;
+  if (skillLower.includes("next")) return <Icons.nextjs className="size-8" />;
+  if (skillLower.includes("postgres")) return <Icons.postgresql className="size-8" />;
 
-  if (skillLower.includes('linux') || skillLower.includes('bash') || skillLower.includes('shell')) {
-    return <Icons.linux className="w-3 h-3" />;
-  }
-  if (skillLower.includes('docker')) {
-    return <Icons.docker className="w-3 h-3" />;
-  }
-  if (skillLower.includes('git')) {
-    return <Icons.git className="w-3 h-3" />;
-  }
-  if (skillLower.includes('nginx')) {
-    return <Icons.nginx className="w-3 h-3" />;
-  }
-  if (skillLower.includes('ci/cd') || skillLower.includes('jenkins')) {
-    return <Icons.cicd className="w-3 h-3" />;
-  }
-  if (skillLower.includes('monitoring') || skillLower.includes('logging')) {
-    return (
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-        className="w-3 h-3"
-        alt="AWS"
-      />
-    );
-  }
-  if (skillLower.includes('cloud security basics')) {
-    return (
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-        className="w-3 h-3"
-        alt="AWS"
-      />
-    );
-  }
-  if (skillLower.includes('prometheus')) {
-    return <Icons.prometheus className="w-3 h-3" />;
-  }
-  if (skillLower.includes('grafana')) {
-    return <Icons.grafana className="w-3 h-3" />;
-  }
-  if (skillLower.includes('node')) {
-    return <Icons.nodejs className="w-3 h-3" />;
-  }
-  if (skillLower.includes('express')) {
-    return <Icons.express className="w-3 h-3" />;
-  }
-  if (skillLower.includes('mongodb') || skillLower.includes('mongo')) {
-    return <Icons.mongodb className="w-3 h-3" />;
-  }
-  if (skillLower.includes('firebase')) {
-    return <Icons.firebase className="w-3 h-3" />;
-  }
-  if (skillLower.includes('javascript') || skillLower.includes('js')) {
-    return <Icons.javascript className="w-3 h-3" />;
-  }
-  if (skillLower.includes('react')) {
-    return <Icons.react className="w-3 h-3" />;
-  }
-  if (skillLower.includes('tailwind')) {
-    return <Icons.tailwind className="w-3 h-3" />;
-  }
-  if (skillLower.includes('python')) {
-    return <Icons.python className="w-3 h-3" />;
-  }
-
-  // Default fallback
-  return <Icons.cloud className="w-3 h-3" />;
+  return <Icons.cloudIcon className="size-8 text-sky-500" />;
 };
 
 export default function Page() {
-  const { theme } = useTheme();
-  const isDarkTheme = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <Hero />
@@ -109,25 +57,24 @@ export default function Page() {
       </section>
 
       <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          {Object.entries(DATA.skillCategories).map(([category, skills], catId) => (
-            <div key={category} className="flex flex-col gap-2">
-              <h3 className="text-lg font-semibold">{category}</h3>
-              <div className="flex flex-wrap gap-1">
-                {skills.map((skill: string, id: number) => (
-                  <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + catId * 0.1 + id * 0.05}>
-                    <Badge className="flex items-center gap-1">
-                      {getSkillIcon(skill, isDarkTheme)}
-                      {skill}
-                    </Badge>
-                  </BlurFade>
-                ))}
-              </div>
-            </div>
-          ))}
+        <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <h2 className="text-3xl font-bold tracking-tighter">Skills</h2>
+        </BlurFade>
+        {/* Skills Grid */}
+        {/* Skills Grid */}
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 w-full max-w-[800px] mx-auto sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 sm:gap-x-8 md:gap-x-12 text-left">
+          {Object.values(DATA.skillCategories)
+            .flat()
+            .map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <div className="flex items-center gap-4 justify-start">
+                  {getSkillIcon(skill)}
+                  <span className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                    {skill}
+                  </span>
+                </div>
+              </BlurFade>
+            ))}
         </div>
       </section>
 
@@ -203,10 +150,10 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
-                  href={project.href}
+                  href={"href" in project ? project.href : undefined}
                   title={project.title}
                   description={project.description}
-                  dates={project.dates}
+                  dates={"dates" in project ? project.dates : ""}
                   tags={project.technologies}
                   image={project.image}
                   video={project.video}

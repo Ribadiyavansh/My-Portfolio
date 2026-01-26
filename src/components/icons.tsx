@@ -1,14 +1,34 @@
-import { Mail, Github, Linkedin, Globe, Instagram } from "lucide-react";
+import {
+  Mail,
+  Github,
+  Linkedin,
+  Globe,
+  Instagram,
+  Shield,
+  Activity,
+  Terminal,
+  Database,
+  Layout,
+  Code2,
+  Cloud,
+} from "lucide-react";
 
 export const Icons = {
   email: Mail,
   github: Github,
   linkedin: Linkedin,
   globe: Globe,
+  shield: Shield,
+  activity: Activity,
+  terminal: Terminal,
+  database: Database,
+  layout: Layout,
+  code: Code2,
+  cloudIcon: Cloud,
+
   typescript: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-      className="size-3"
       alt="TypeScript"
       {...props}
     />
@@ -16,7 +36,6 @@ export const Icons = {
   react: (props: any) => (
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-      className="size-3"
       alt="React"
       {...props}
     />
@@ -24,7 +43,6 @@ export const Icons = {
   nextjs: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-      className="size-3"
       alt="Next.js"
       {...props}
     />
@@ -32,7 +50,6 @@ export const Icons = {
   mongodb: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-      className="size-3"
       alt="MongoDB"
       {...props}
     />
@@ -40,15 +57,13 @@ export const Icons = {
   postgresql: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-      className="size-3"
       alt="PostgreSQL"
       {...props}
     />
   ),
   aws: (props: any) => (
     <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" // Using generic AWS text/icon
-      className="size-3"
+      src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
       alt="AWS"
       {...props}
     />
@@ -56,7 +71,6 @@ export const Icons = {
   linux: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-      className="size-3"
       alt="Linux"
       {...props}
     />
@@ -64,7 +78,6 @@ export const Icons = {
   docker: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-      className="size-3"
       alt="Docker"
       {...props}
     />
@@ -72,7 +85,6 @@ export const Icons = {
   git: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-      className="size-3"
       alt="Git"
       {...props}
     />
@@ -80,7 +92,6 @@ export const Icons = {
   nginx: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
-      className="size-3"
       alt="Nginx"
       {...props}
     />
@@ -88,7 +99,6 @@ export const Icons = {
   cicd: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
-      className="size-3"
       alt="CI/CD"
       {...props}
     />
@@ -96,7 +106,6 @@ export const Icons = {
   cloud: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-      className="size-3"
       alt="Cloud Storage"
       {...props}
     />
@@ -104,7 +113,6 @@ export const Icons = {
   prometheus: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"
-      className="size-3"
       alt="Prometheus"
       {...props}
     />
@@ -112,7 +120,6 @@ export const Icons = {
   grafana: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
-      className="size-3"
       alt="Grafana"
       {...props}
     />
@@ -120,7 +127,6 @@ export const Icons = {
   nodejs: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-      className="size-3"
       alt="Node.js"
       {...props}
     />
@@ -128,7 +134,6 @@ export const Icons = {
   express: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-      className="size-3"
       alt="Express.js"
       {...props}
     />
@@ -136,7 +141,6 @@ export const Icons = {
   firebase: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-      className="size-3"
       alt="Firebase"
       {...props}
     />
@@ -144,15 +148,13 @@ export const Icons = {
   javascript: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-      className="size-3"
       alt="JavaScript"
       {...props}
     />
   ),
   tailwind: (props: any) => (
     <img
-      src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-      className="size-3"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
       alt="Tailwind CSS"
       {...props}
     />
@@ -160,8 +162,21 @@ export const Icons = {
   python: (props: any) => (
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-      className="size-3"
       alt="Python"
+      {...props}
+    />
+  ),
+  bash: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+      alt="Bash"
+      {...props}
+    />
+  ),
+  githubBrand: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      alt="GitHub"
       {...props}
     />
   ),

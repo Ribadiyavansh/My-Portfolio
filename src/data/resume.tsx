@@ -14,17 +14,17 @@ export const DATA = {
     avatarUrl: "/my-avtar.png",
     skillCategories: {
         "Cloud & DevOps": [
-            "AWS (EC2, S3, IAM, CloudWatch)",
-            "Linux Administration",
-            "Docker & Containerization",
-            "CI/CD Pipelines",
+            "AWS",
+            "Linux",
+            "Docker",
+            "CI/CD",
             "Prometheus",
             "Grafana",
-            "Git & GitHub",
+            "Git",
             "Nginx",
             "Monitoring & Logging",
-            "Cloud Security Basics",
-            "Bash (Basics)",
+            "Cloud Security",
+            "Bash",
         ],
         "Backend & APIs": [
             "Node.js",
@@ -34,7 +34,7 @@ export const DATA = {
         ],
         "Frontend & Scripting": [
             "JavaScript",
-            "React.js",
+            "React",
             "Tailwind CSS",
             "Python",
         ],
