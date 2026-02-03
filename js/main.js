@@ -50,4 +50,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+    // Experience Accordion Logic
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            const content = item.querySelector('.accordion-content');
+            const isExpanded = item.getAttribute('data-expanded') === 'true';
+
+            // Toggle current item
+            if (isExpanded) {
+                item.setAttribute('data-expanded', 'false');
+                content.style.maxHeight = null;
+            } else {
+                item.setAttribute('data-expanded', 'true');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    });
+
 });
