@@ -2,15 +2,30 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
     const [activeTab, setActiveTab] = useState('home');
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    };
 
     useEffect(() => {
         // Intersection Observer for Active Link Highlighting
         const sections = document.querySelectorAll('section, div[id="skills"]'); // Added skills just in case, though it's inside About
+        const root = null; // Defined explicitly to fix potential reference issue
 
         // Create an observer that updates activeTab when a section is in view
         const observerOptions = {
-            root: null,
-            rootMargin: '-50% 0px -50% 0px', // Trigger when section is in middle of viewport
+            root,
+            rootMargin: '-30% 0px -70% 0px', // Trigger when section is near top of viewport
             threshold: 0
         };
 
@@ -90,6 +105,20 @@ const Navbar = () => {
                         onClick={(e) => handleNavClick(e, 'contact')}>
                         <i className="fa-solid fa-paper-plane"></i>
                     </a>
+                </li>
+                <li style={{ borderLeft: '1px solid var(--dock-border)', paddingLeft: '8px', marginLeft: '8px' }}>
+                    <button
+                        onClick={toggleTheme}
+                        className="dock-link"
+                        title={theme === 'light' ? "Switch to Dark Mode" : "Switch to Light Mode"}
+                        style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}
+                    >
+                        {theme === 'light' ? (
+                            <i className="fa-solid fa-moon"></i>
+                        ) : (
+                            <i className="fa-solid fa-sun"></i>
+                        )}
+                    </button>
                 </li>
             </ul>
         </nav>
