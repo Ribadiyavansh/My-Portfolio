@@ -1,239 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" /> <!-- Placeholder icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ribadiya Vansh | Entrepreneur & Developer</title>
-
-    <!-- Meta Tags -->
-    <meta name="description" content="Portfolio of Ribadiya Vansh, an Entrepreneur & IT Developer.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 
-    <!-- Icons (Lucide-like clean icons preferred, using FontAwesome as fallback but styled minimally) -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="container hero-container text-center">
-                <div class="avatar-wrapper">
-                    <img src="assets/memoji_avatar_male.png" alt="Ribadiya Vansh" class="avatar">
-                </div>
-
-                <h1 class="hero-title">
-                    Hi, I'm Vansh <span class="wave">👋</span>
-                </h1>
-
-                <p class="hero-subtitle">
-                    Entrepreneur & IT Developer
-                </p>
-
-                <div class="hero-cta">
-                    <!-- Skills "Chips" look from reference -->
-                    <!-- Social Links (Replacing Chips) -->
-                    <div class="hero-socials">
-                        <a href="https://github.com/Ribadiyavansh" target="_blank" class="social-icon-link"
-                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank" class="social-icon-link" aria-label="LinkedIn"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon-link"
-                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-
-                    <div class="action-buttons">
-                        <a href="#projects" class="btn btn-primary">Check out my work</a>
-                        <a href="mailto:vanshribadiya3@gmail.com" class="btn btn-outline">Get in touch</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section (Minimal) -->
-        <section id="about" class="section">
-            <div class="container small-container">
-                <h2 class="section-title">About</h2>
-                <div class="prose">
-                    <p>I'm a problem solver and an aspiring Entrepreneur with a strong developer mindset. I specialize
-                        in building web based solutions and have a keen interest in modern technologies.</p>
-                    <p>My journey involves constant learning, experimenting with code, and turning ideas into functional
-                        reality.</p>
-                </div>
-
-                <!-- Experience Timeline styled cleanly -->
-                <!-- Skills Subsection (Moved here) -->
-                <div id="skills" style="margin-bottom: 40px; margin-top: 20px;">
-                    <h3 class="subsection-title">Skill</h3>
-                    <div class="stack-grid">
-                        <div class="stack-item stack-html"><i class="fa-brands fa-html5"></i> HTML5</div>
-                        <div class="stack-item stack-css"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-                        <div class="stack-item stack-js"><i class="fa-brands fa-js"></i> JavaScript</div>
-                        <div class="stack-item stack-php"><i class="fa-brands fa-php"></i> PHP</div>
-                        <div class="stack-item stack-git"><i class="fa-brands fa-git-alt"></i> Git</div>
-                    </div>
-                </div>
-
-                <!-- Experience Accordion -->
-                <div class="experience-accordion">
-                    <h3 class="subsection-title">Work Experience</h3>
-
-                    <div class="accordion-item" data-expanded="false">
-                        <div class="accordion-header">
-                            <div class="header-left">
-                                <div class="company-logo">
-                                    <img src="assets/simform_logo.webp" alt="Simform" class="logo-img">
-                                </div>
-                                <div class="header-info inline-header">
-                                    <div class="title-group">
-                                        <h4 class="role-title">Frontend Developer</h4>
-                                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
-                                    </div>
-                                    <span class="location-text">Ahmedabad</span>
-                                </div>
-                            </div>
-                            <div class="header-right">
-                                <span class="job-period">April 2025 - June 2025</span>
-                            </div>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="content-inner">
-                                <p class="company-bio">Simform is a digital engineering and software development
-                                    company. It helps businesses build scalable digital products and provides agile
-                                    teams to extend development capabilities.</p>
-                                <p>Worked on UI development, web components, and collaborated with the team to deliver
-                                    high-quality web interfaces.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Section -->
-                <div class="education-section" style="margin-top: 40px;">
-                    <h3 class="subsection-title">Education</h3>
-
-                    <div class="education-item">
-                        <div class="edu-header">
-                            <div class="header-left">
-                                <div class="company-logo">
-                                    <img src="assets/atmiya_logo.png" alt="Atmiya University" class="logo-img">
-                                </div>
-                                <div class="header-info">
-                                    <a href="https://atmiyauni.ac.in/" target="_blank" class="role-title hover-link"
-                                        style="text-decoration: none; color: var(--text-primary);">Atmiya University</a>
-                                    <span class="company-name"
-                                        style="font-weight: 500; font-size: 0.95rem; color: var(--text-secondary);">Bachelor
-                                        of Computer Applications (BCA)</span>
-                                </div>
-                            </div>
-                            <div class="header-right">
-                                <span class="job-period">2021 - 2026</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title text-center">My Projects</h2>
-                <div class="section-subtitle text-center">
-                    <p class="subtitle-lead">Check out my cloud-focused work.</p>
-                    <p class="subtitle-text">I've worked on practical projects involving real deployments, automation,
-                        and cloud infrastructure.</p>
-                </div>
-                <div class="projects-grid">
-                    <!-- Project 1: Placement Management System -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3 class="project-title">Placement Management System</h3>
-                            <p class="project-desc">Web-based placement tracking platform with student profile
-                                management, resume builder, and job application features.</p>
-
-                            <div class="project-tags">
-                                <span class="tech-badge"><i class="fa-brands fa-php"></i> PHP</span>
-                                <span class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</span>
-                                <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
-                            </div>
-                        </div>
-
-                        <div class="project-footer">
-                            <a href="https://github.com/Ribadiyavansh/placementpro" target="_blank"
-                                class="btn-card btn-website"><i class="fa-solid fa-globe"></i> Website</a>
-                            <a href="https://github.com/Ribadiyavansh/placementpro" target="_blank"
-                                class="btn-card btn-source"><i class="fa-brands fa-github"></i> Source</a>
-                        </div>
-                    </article>
-
-                    <!-- Project 2: QuickBite -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <h3 class="project-title">QuickBite</h3>
-                            <p class="project-desc">Online food ordering UI featuring menu browsing, cart functionality,
-                                and a smooth order placement flow.</p>
-
-                            <div class="project-tags">
-                                <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
-                                <span class="tech-badge"><i class="fa-solid fa-desktop"></i> Frontend</span>
-                                <span class="tech-badge"><i class="fa-solid fa-layer-group"></i> UI/UX</span>
-                            </div>
-                        </div>
-
-                        <div class="project-footer">
-                            <a href="https://github.com/Ribadiyavansh/quickbite" target="_blank"
-                                class="btn-card btn-website"><i class="fa-solid fa-globe"></i> Website</a>
-                            <a href="https://github.com/Ribadiyavansh/quickbite" target="_blank"
-                                class="btn-card btn-source"><i class="fa-brands fa-github"></i> Source</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Contact / Footer -->
-        <section id="contact" class="section footer-section text-center">
-            <div class="container">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="footer-text">Feel free to reach out for collaborations or just a friendly hello!</p>
-                <div class="social-dock">
-                    <a href="mailto:vanshribadiya3@gmail.com" class="social-link" title="Email"><i
-                            class="fa-solid fa-envelope"></i></a>
-                    <a href="https://github.com/Ribadiyavansh" target="_blank" class="social-link" title="GitHub"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram"><i
-                            class="fa-brands fa-instagram"></i></a>
-                </div>
-                <p class="copyright">&copy; 2026 Ribadiya Vansh</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Floating Dock Navigation -->
-    <nav class="dock-nav">
-        <ul class="dock-list">
-            <li><a href="#home" class="dock-link active" title="Home"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#about" class="dock-link" title="About"><i class="fa-solid fa-user"></i></a></li>
-            <li><a href="#projects" class="dock-link" title="Projects"><i class="fa-solid fa-code"></i></a></li>
-            <li><a href="#skills" class="dock-link" title="Skill"><i class="fa-solid fa-layer-group"></i></a></li>
-            <li><a href="#contact" class="dock-link" title="Contact"><i class="fa-solid fa-paper-plane"></i></a></li>
-        </ul>
-    </nav>
-
-    <script src="js/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
