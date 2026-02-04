@@ -184,12 +184,12 @@ export const DATA = {
             links: [
                 {
                     type: "Website",
-                    href: "#",
+                    href: "https://whatsapp.sahilprajapati.me",
                     icon: <Icons.globe className="size-3" />,
                 },
                 {
                     type: "Source",
-                    href: "https://github.com/Sahil-Prajapati-8917/Whatsapp-Code.git",
+                    href: "https://github.com/Sahil-Prajapati-8917/Whatsapp.git",
                     icon: <Icons.github className="size-3" />,
                 },
             ],
