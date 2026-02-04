@@ -68,19 +68,19 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#projects"
-                        className={`dock-link ${activeTab === 'projects' ? 'active' : ''}`}
-                        title="Projects"
-                        onClick={(e) => handleNavClick(e, 'projects')}>
-                        <i className="fa-solid fa-code"></i>
-                    </a>
-                </li>
-                <li>
                     <a href="#skills"
                         className={`dock-link ${activeTab === 'skills' ? 'active' : ''}`}
                         title="Skill"
                         onClick={(e) => handleNavClick(e, 'skills')}>
                         <i className="fa-solid fa-layer-group"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects"
+                        className={`dock-link ${activeTab === 'projects' ? 'active' : ''}`}
+                        title="Projects"
+                        onClick={(e) => handleNavClick(e, 'projects')}>
+                        <i className="fa-solid fa-code"></i>
                     </a>
                 </li>
                 <li>
