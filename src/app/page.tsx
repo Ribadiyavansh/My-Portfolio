@@ -46,10 +46,10 @@ export default function Page() {
       <Hero />
 
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+        <BlurFade delay={BLUR_FADE_DELAY * 3} inView>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 18}>
+        <BlurFade delay={BLUR_FADE_DELAY * 4} inView>
           <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </div>
@@ -57,16 +57,15 @@ export default function Page() {
       </section>
 
       <section id="skills">
-        <BlurFade delay={BLUR_FADE_DELAY * 9}>
+        <BlurFade delay={BLUR_FADE_DELAY * 3} inView>
           <h2 className="text-3xl font-bold tracking-tighter">Skills</h2>
         </BlurFade>
-        {/* Skills Grid */}
         {/* Skills Grid */}
         <div className="grid grid-cols-2 gap-x-6 gap-y-8 w-full max-w-[800px] mx-auto sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 sm:gap-x-8 md:gap-x-12 text-left">
           {Object.values(DATA.skillCategories)
             .flat()
             .map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 3 + id * 0.05} inView>
                 <div className="flex items-center gap-4 justify-start">
                   {getSkillIcon(skill)}
                   <span className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
@@ -80,13 +79,14 @@ export default function Page() {
 
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <BlurFade delay={BLUR_FADE_DELAY * 3} inView>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
               key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 4 + id * 0.05}
+              inView
             >
               <ResumeCard
                 logoUrl={work.logoUrl}
@@ -105,13 +105,14 @@ export default function Page() {
 
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 3} inView>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
               key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 4 + id * 0.05}
+              inView
             >
               <ResumeCard
                 href={education.href}
@@ -128,7 +129,7 @@ export default function Page() {
 
       <section id="projects">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <BlurFade delay={BLUR_FADE_DELAY * 3} inView>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -147,7 +148,8 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+                inView
               >
                 <ProjectCard
                   href={"href" in project ? project.href : undefined}
@@ -187,7 +189,7 @@ export default function Page() {
 
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <BlurFade delay={BLUR_FADE_DELAY * 9} inView>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact

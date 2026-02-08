@@ -182,11 +182,11 @@ export const DATA = {
                 "JSZip",
             ],
             links: [
-                {
-                    type: "Website",
-                    href: "#",
-                    icon: <Icons.globe className="size-3" />,
-                },
+                // {
+                //     type: "Website",
+                //     href: "#",
+                //     icon: <Icons.globe className="size-3" />,
+                // },
                 {
                     type: "Source",
                     href: "https://github.com/Sahil-Prajapati-8917/File-Transfer-App",
