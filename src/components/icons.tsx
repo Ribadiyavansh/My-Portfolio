@@ -11,6 +11,7 @@ import {
   Layout,
   Code2,
   Cloud,
+  Palette,
 } from "lucide-react";
 
 export const Icons = {
@@ -25,6 +26,7 @@ export const Icons = {
   layout: Layout,
   code: Code2,
   cloudIcon: Cloud,
+  palette: Palette,
 
   typescript: (props: any) => (
     <img

@@ -108,6 +108,32 @@ export const DATA = {
             image: "",
             video: "",
         },
+        {
+            title: "QuickBite",
+            href: "https://github.com/Ribadiyavansh/quickbite",
+            active: true,
+            description:
+                "Online food ordering UI featuring menu browsing, cart functionality, and a smooth order placement flow.",
+            technologies: [
+                "JavaScript",
+                "Frontend",
+                "UI/UX",
+            ],
+            links: [
+                {
+                    type: "Website",
+                    href: "https://github.com/Ribadiyavansh/quickbite",
+                    icon: <Icons.globe className="size-3" />,
+                },
+                {
+                    type: "Source",
+                    href: "https://github.com/Ribadiyavansh/quickbite",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "",
+            video: "",
+        },
     ],
     hackathons: [],
 } as const;
