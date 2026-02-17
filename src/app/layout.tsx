@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import React from "react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
@@ -72,7 +73,7 @@ export default function Layout({ children }: LayoutProps) {
               name: company.company,
               jobTitle: company.title,
               startDate: company.start,
-              endDate: company.end === "Present" ? undefined : company.end,
+              endDate: (company.end as string) === "Present" ? undefined : company.end,
             })),
             knowsAbout: Object.values(DATA.skillCategories).flat(),
           })}

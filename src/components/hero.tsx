@@ -53,7 +53,7 @@ export function Hero() {
         <div className="mt-8 flex gap-4">
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <Button asChild>
-              <a href="/Vansh - Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={DATA.resume} target="_blank" rel="noopener noreferrer">
                 <svg
                   className="mr-2 h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"

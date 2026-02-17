@@ -158,10 +158,10 @@ export default function Page() {
                 inView
               >
                 <ProjectCard
-                  href={"href" in project ? project.href : undefined}
+                  href={project.href}
                   title={project.title}
                   description={project.description}
-                  dates={"dates" in project ? project.dates : ""}
+                  dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
                   video={project.video}

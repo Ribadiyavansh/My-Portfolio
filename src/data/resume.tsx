@@ -5,13 +5,14 @@ export const DATA = {
     name: "Vansh",
     initials: "V",
     url: "https://vansh-portfolio.vercel.app",
+    resume: "/Ribadiya_Vansh.pdf",
     location: "India",
     locationLink: "https://www.google.com/maps/place/india",
     description:
         "Entrepreneur & IT Developer. I design, deploy, and manage secure, scalable cloud infrastructure.",
     summary:
         "I am an entrepreneur and IT developer focused on building scalable digital products and growth-driven brands. My work sits at the intersection of technology, business strategy, and execution.\n\nI am an entrepreneur with the capability to conceptualize, establish, and scale industrial ventures — including manufacturing plants, operational firms, and structured business ecosystems.",
-    avatarUrl: "/my-avtar.png",
+    avatarUrl: "/memoji_avatar_male.png",
     skillCategories: {
         "Web Development": [
             "HTML5",
@@ -85,6 +86,7 @@ export const DATA = {
         {
             title: "Placement Management System",
             href: "https://github.com/Ribadiyavansh/placementpro",
+            dates: "Nov 2023 - Dec 2023",
             active: true,
             description:
                 "Web-based placement tracking platform with student profile management, resume builder, and job application features.",
@@ -111,6 +113,7 @@ export const DATA = {
         {
             title: "QuickBite",
             href: "https://github.com/Ribadiyavansh/quickbite",
+            dates: "June 2023 - July 2023",
             active: true,
             description:
                 "Online food ordering UI featuring menu browsing, cart functionality, and a smooth order placement flow.",
