@@ -13,6 +13,10 @@ const BLUR_FADE_DELAY = 0.04;
 const getSkillIcon = (skill: string) => {
   const skillLower = skill.toLowerCase();
 
+  if (skillLower.includes("html")) return <Icons.html className="size-8" />;
+  if (skillLower.includes("css")) return <Icons.css className="size-8" />;
+  if (skillLower.includes("php")) return <Icons.php className="size-8" />;
+  if (skillLower.includes("mysql") || skillLower.includes("sql")) return <Icons.mysql className="size-8" />;
   if (skillLower.includes("aws") || skillLower.includes("ec2") || skillLower.includes("s3") || skillLower.includes("iam") || skillLower.includes("cloudwatch")) return <Icons.aws className="size-8" />;
   if (skillLower.includes("linux")) return <Icons.linux className="size-8" />;
   if (skillLower.includes("bash")) return <Icons.bash className="size-8" />;

@@ -208,5 +208,33 @@ export const Icons = {
       {...props}
     />
   ),
+  html: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      alt="HTML5"
+      {...props}
+    />
+  ),
+  css: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      alt="CSS3"
+      {...props}
+    />
+  ),
+  php: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+      alt="PHP"
+      {...props}
+    />
+  ),
+  mysql: (props: any) => (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+      alt="MySQL"
+      {...props}
+    />
+  ),
   instagram: Instagram,
 };
