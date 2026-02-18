@@ -65,7 +65,7 @@ export const DATA = {
             badges: [],
             location: "Ahmedabad",
             title: "Frontend Developer",
-            logoUrl: "/omnetra-infotech.png",
+            logoUrl: "/simform_logo.webp",
             start: "April 2025",
             end: "Auguest 2025",
             description:
