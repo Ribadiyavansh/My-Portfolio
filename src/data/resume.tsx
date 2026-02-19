@@ -39,7 +39,7 @@ export const DATA = {
             },
             LinkedIn: {
                 name: "LinkedIn",
-                url: "https://www.linkedin.com/in/vansh-ribadiyaa-5579482b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                url: "https://www.linkedin.com/in/vaansh-ribadiya-5579482b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                 icon: Icons.linkedin,
                 navbar: true,
             },
