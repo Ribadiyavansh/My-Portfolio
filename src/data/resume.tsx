@@ -28,7 +28,7 @@ export const DATA = {
         { href: "/", icon: HomeIcon, label: "Home" },
     ],
     contact: {
-        email: "vanshribadiya3@gmail.com",
+        email: "fresqo.in@gmail.com",
         tel: "+91 7878224846",
         social: {
             GitHub: {
@@ -51,7 +51,7 @@ export const DATA = {
             },
             email: {
                 name: "Send Email",
-                url: "#",
+                url: "mailto:fresqo.in@gmail.com",
                 icon: Icons.email,
                 navbar: false,
             },
